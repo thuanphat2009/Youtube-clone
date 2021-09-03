@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/icon-youtube-title.png" type="image/x-icon">
+    <title>Youtube-Clone</title>
+    <script src="https://kit.fontawesome.com/72c5b1ebe2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/grid.css">
+</head>
+
+<body>
+    <div id='header'>
+        <div class="header__item">
+            <div class="header__item-left">
+                <i class="header__item-left-icon fas fa-bars"></i>
+                <div class="header__item-left-logo">
+                    <a href="">
+                        <img src="/img/logo.jpg" alt="" class="header__item-left-logo-img">
+                    </a>
+                </div>
+
+            </div>
+            <div class="header__item-center">
+                <ul class="header__item-center-list">
+                    <li class="header__item-center-item">
+                        <div class="header__search">
+                            <div class="header__search-input-wrap">
+                                <input type="text" class="header__item-center-item-input" placeholder="Tìm kiếm">
+                                <div class="header__search-history">
+                                    <ul class="header__search-history-list">
+                                        <li class="header__search-history-item">
+                                            <a href="" class="header__search-history-link">
+                                                Đường một chiều
+                                            </a>
+                                            <a href="" class="header__search-history-remove">
+                                                Xóa
+                                            </a>
+                                        </li>
+                                        <li class="header__search-history-item">
+                                            <a href="" class="header__search-history-link">
+                                                Tằng Tăng Tăng
+                                            </a>
+                                            <a href="" class="header__search-history-remove">
+                                                Xóa
+                                            </a>
+                                        </li>
+                                        <li class="header__search-history-item">
+                                            <a href="" class="header__search-history-link">
+                                                Bài gì mà úm xi la bùm ba là bum
+                                            </a>
+                                            <a href="" class="header__search-history-remove">
+                                                Xóa
+                                            </a>
+                                        </li>
+                                        <li class="header__search-history-item">
+                                            <a href="" class="header__search-history-link">
+                                                Trời ơi cái qq zi zayyyy
+                                            </a>
+                                            <a href="" class="header__search-history-remove">
+                                                Xóa
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <button class="header__keyboard-btn">
+                                <i class="header__keyboard-btn-icon fas fa-keyboard"></i>
+                            </button>
+
+                        </div>
+
+                    </li>
+                    <li class="header__item-center-item header__item-center-item-search">
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fas fa-search"></i>
+                        </button>
+                        <span class="header__search-message">
+                            Tìm kiếm
+                        </span>
+                    </li>
+                    <li class="header__item-center-item header__item-center-item-voice">
+                        <button class="header__search-voice-btn">
+                            <i class="header__search-voice-btn-icon fas fa-microphone"></i>
+                        </button>
+                        <span class="header__search-voice-message">
+                            Tìm kiếm bằng giọng nói
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__item-right">
+                <ul class="header__item-right-list">
+                    <li class="header__item-right-item">
+                        <i class="header__item-right-item-icon far fa-video-plus">
+                        </i>
+                        <div class="header__item-right-item-record">
+                            <ul class="header__item-right-item-record-list">
+                                <li class="header__item-right-item-record-item">
+                                    <a href="" class="header__item-right-item-record-link">
+                                        <i class="header__item-right-item-record-icon fal fa-play-circle"></i>
+                                        Tải video lên
+                                    </a>
+
+                                </li>
+                                <li class="header__item-right-item-record-item">
+                                    <a href="" class="header__item-right-item-record-link">
+                                        <i class="header__item-right-item-record-icon fal fa-signal-stream"></i>
+                                        Phát trực tiếp
+                                    </a>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header__item-right-item">
+                        <i class="header__item-right-item-icon far fa-th"></i>
+                        <div class="header__item-right-item-app">
+                            <div class="header__item-right-item-app-first">
+                                <ul class="header__item-right-item-app-list">
+                                    <li class="header__item-right-item-app-item">
+                                        <a href="" class="header__item-right-item-app-link">
+                                            <i class="header__item-right-item-app-icon fas fa-tv"></i>
+                                            YouTube TV
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="header__item-right-item-app-second">
+                                <ul class="header__item-right-item-app-list">
+                                    <li class="header__item-right-item-app-item">
+                                        <a href="" class="header__item-right-item-app-link">
+                                            <i class="header__item-right-item-app-icon fas fa-headphones"></i>
+                                            YouTube Music
+                                        </a>
+                                    </li>
+                                    <li class="header__item-right-item-app-item">
+                                        <a href="" class="header__item-right-item-app-link">
+                                            <i class="header__item-right-item-app-icon fas fa-child"></i>
+
+                                            YouTube Kids
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="header__item-right-item-app-third">
+                                <ul class="header__item-right-item-app-list">
+                                    <li class="header__item-right-item-app-item">
+                                        <a href="" class="header__item-right-item-app-link">
+                                            <i class="header__item-right-item-app-icon fab fa-youtube"></i>
+                                            Học viện sáng tạo
+                                        </a>
+                                    </li>
+                                    <li class="header__item-right-item-app-item">
+                                        <a href="" class="header__item-right-item-app-link">
+                                            <i class="header__item-right-item-app-icon fab fa-youtube"></i>
+                                            Youtube dành cho Nghệ sĩ
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header__item-right-item">
+                        <i class="header__item-right-item-icon far fa-bell"></i>
+                        <div class="header__item-right-item-notify">
+                            <div class="header__item-right-item-notify-heading">
+                                <p class="header__item-right-item-notify-name">
+                                    Thông báo
+                                </p>
+                                <i class="header__item-right-item-notify-icon fal fa-cog"></i>
+                            </div>
+                            <div class="header__item-right-item-notify-content">
+                                <ul class="header__item-right-item-notify-content-list">
+                                    <li class="header__item-right-item-notify-content-item">
+                                        <a href="" class="header__item-right-item-notify-content-link">
+                                            <img src="https://yt3.ggpht.com/vxj4MtCwT17lzhjtB2wDOYr_7_0bwWa9ukHSCy-rILp9c9rDMSs6rd2hZti4pbj2vAAf-4XKqg=s176-c-k-c0x00ffffff-no-rj-mo"
+                                                alt="" class="header__item-right-item-notify-content-avatar">
+                                            <p class="header__item-right-item-notify-content-description">
+                                                TRUNG SUSAN | THẦN KHUYỂN TRONG TAY ANH BA LẠI XUẤT HIỆN...ĐỪNG NÊN MÚA
+                                                TRƯỚC MẶT THẦY BA NHA
+                                                <span class="header__item-right-item-notify-content-time">19 giờ
+                                                    trước</span>
+                                            </p>
+                                            <img src="https://i.ytimg.com/an_webp/_DLc564PvsI/mqdefault_6s.webp?du=3000&sqp=CIjgp4kG&rs=AOn4CLB8Gnd2C85YieIxwxmoqr13OTbZSw"
+                                                alt="" class="header__item-right-item-notify-content-image">
+
+
+                                        </a>
+                                        <span class="header__item-right-item-notify-content-setting">
+                                            <i
+                                                class="header__item-right-item-notify-content-icon fal fa-ellipsis-v"></i>
+                                        </span>
+                                    </li>
+                                    <li class="header__item-right-item-notify-content-item">
+                                        <a href="" class="header__item-right-item-notify-content-link">
+                                            <img src="https://yt3.ggpht.com/ytc/AKedOLQ-oPdSGem16fIDAPWBaZNbQGRbpIhpTCBP1XwLfQ=s176-c-k-c0x00ffffff-no-rj-mo"
+                                                alt="" class="header__item-right-item-notify-content-avatar">
+                                            <p class="header__item-right-item-notify-content-description">
+                                                Tổng Hợp VŨ | Tuyển Tập Những Ca Khúc INDIE Hay Nhất Của VŨ
+                                                <span class="header__item-right-item-notify-content-time">19 giờ
+                                                    trước</span>
+                                            </p>
+                                            <img src="https://i.ytimg.com/an_webp/Giv0zvtVuzU/mqdefault_6s.webp?du=3000&sqp=CIzbp4kG&rs=AOn4CLDFSjQHFGZu2vxwZHv20j7Oqfj1RQ"
+                                                alt="" class="header__item-right-item-notify-content-image">
+
+
+                                        </a>
+                                        <span class="header__item-right-item-notify-content-setting">
+                                            <i
+                                                class="header__item-right-item-notify-content-icon fal fa-ellipsis-v"></i>
+                                        </span>
+                                    </li>
+                                    <li class="header__item-right-item-notify-content-item">
+                                        <a href="" class="header__item-right-item-notify-content-link">
+                                            <img src="https://yt3.ggpht.com/ytc/AKedOLRGxr9kwH5lr2EJl-W5mpGxJfJMSKyUuzLsXFzOpg=s68-c-k-c0x00ffffff-no-rj"
+                                                alt="" class="header__item-right-item-notify-content-avatar">
+                                            <p class="header__item-right-item-notify-content-description">
+                                                COVER ACOUSTIC HAY NHẤT MỌI THỜI ĐẠI - Người Tình Mùa Đông
+                                                <span class="header__item-right-item-notify-content-time">19 giờ
+                                                    trước</span>
+                                            </p>
+                                            <img src="https://i.ytimg.com/vi/Bh2lnFf-uFQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBZD3RQy-k165Y7PzhOOUx7D9lglA"
+                                                alt="" class="header__item-right-item-notify-content-image">
+
+
+                                        </a>
+                                        <span class="header__item-right-item-notify-content-setting">
+                                            <i
+                                                class="header__item-right-item-notify-content-icon fal fa-ellipsis-v"></i>
+                                        </span>
+                                    </li>
+                                    <li class="header__item-right-item-notify-content-item">
+                                        <a href="" class="header__item-right-item-notify-content-link">
+                                            <img src="https://yt3.ggpht.com/ytc/AKedOLSGrggVOFSZTEsQiN6qAYNM3pkuD1QXyr-kLTqqGw=s68-c-k-c0x00ffffff-no-rj"
+                                                alt="" class="header__item-right-item-notify-content-avatar">
+                                            <p class="header__item-right-item-notify-content-description">
+                                                ♪ MƯA ‣ NHỮNG BÀI HÁT NHẸ NHÀNG HAY NHẤT CHO NHỮNG NGÀY MƯA RƠI
+                                                <span class="header__item-right-item-notify-content-time">19 giờ
+                                                    trước</span>
+                                            </p>
+                                            <img src="https://i.ytimg.com/an_webp/SF0qguQsZbo/mqdefault_6s.webp?du=3000&sqp=COjup4kG&rs=AOn4CLBoEyLTMzn68BA5k57njUMISZlMeQ"
+                                                alt="" class="header__item-right-item-notify-content-image">
+
+
+                                        </a>
+                                        <span class="header__item-right-item-notify-content-setting">
+                                            <i
+                                                class="header__item-right-item-notify-content-icon fal fa-ellipsis-v"></i>
+                                        </span>
+                                    </li>
+                                    <li class="header__item-right-item-notify-content-item">
+                                        <a href="" class="header__item-right-item-notify-content-link">
+                                            <img src="https://yt3.ggpht.com/ks4IZPRy9cfGFMSWonStSsRh4gRE28aknzH2jerCr0ffRwLcFbtksnlb7p0Rt5B8RKZmzIlHlI0=s68-c-k-c0x00ffffff-no-rj"
+                                                alt="" class="header__item-right-item-notify-content-avatar">
+                                            <p class="header__item-right-item-notify-content-description">
+                                                TOP 20 Ca Khúc Từng Làm Mưa Làm Gió Các Bảng Xếp Hạng Âm Nhạc - Liên
+                                                Khúc Nhạc Trẻ Hay Nhất ♫
+                                                <span class="header__item-right-item-notify-content-time">19 giờ
+                                                    trước</span>
+                                            </p>
+                                            <img src="https://i.ytimg.com/vi/ITiWz3sk1GE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBCvBvpnFQVx8l9nrhsL2tV6OiebQ"
+                                                alt="" class="header__item-right-item-notify-content-image">
+
+
+                                        </a>
+                                        <span class="header__item-right-item-notify-content-setting">
+                                            <i
+                                                class="header__item-right-item-notify-content-icon fal fa-ellipsis-v"></i>
+                                        </span>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="header__item-right-item header__item-right-item-user">
+                        <img src="https://scontent-xsp1-2.xx.fbcdn.net/v/t1.6435-1/p240x240/145115664_2776261855958759_7169305434464012954_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=7206a8&_nc_ohc=keu73ePKg_sAX_E2Ufo&_nc_ht=scontent-xsp1-2.xx&oh=284dd050bbe8971a82ef83eebe7c120f&oe=614B2FF9"
+                            alt="" class="header__item-right-item-avatar">
+
+                        <div class="header__item-right-item-user-more">
+                            <div class="header__item-right-item-user-more-heading">
+                                <img src="https://scontent-xsp1-2.xx.fbcdn.net/v/t1.6435-1/p240x240/145115664_2776261855958759_7169305434464012954_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=7206a8&_nc_ohc=keu73ePKg_sAX_E2Ufo&_nc_ht=scontent-xsp1-2.xx&oh=284dd050bbe8971a82ef83eebe7c120f&oe=614B2FF9"
+                                    alt="" class="header__item-right-item-user-more-img">
+                                <div class="header__item-right-item-user-more-info">
+                                    <span class="header__item-right-item-user-more-info-name">
+                                        Tăng Thuận Phát
+                                    </span>
+                                    <a href="" class="header__item-right-item-user-more-info-link">
+                                        Quản lí tài khoản Google của Tăng Thuận Phát đẹp trai số 1 HUTECH
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="header__item-right-item-user-more-content">
+                                <ul class="header__item-right-item-user-more-list-first">
+                                    <li class="header__item-right-item-user-more-item">
+                                        <a href="" class="header__item-right-item-user-more-link">
+                                            <i class="header__item-right-item-user-more-icon fal fa-id-card-alt"></i>
+                                            <p class="header__item-right-item-user-more-description">
+                                                Kênh của bạn
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="header__item-right-item-user-more-item">
+                                        <a href="" class="header__item-right-item-user-more-link">
+                                            <i class="header__item-right-item-user-more-icon fal fa-usd-circle"></i>
+                                            <p class="header__item-right-item-user-more-description">
+                                                Giao dịch và mua gói hội viên
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="header__item-right-item-user-more-item">
+                                        <a href="" class="header__item-right-item-user-more-link">
+                                            <i class="header__item-right-item-user-more-icon fal fa-play-circle"></i>
+                                            <p class="header__item-right-item-user-more-description">
+                                                Youtube Studio
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="header__item-right-item-user-more-item">
+                                        <a href="" class="header__item-right-item-user-more-link">
+                                            <i class="header__item-right-item-user-more-icon fal fa-sign-out"></i>
+                                            <p class="header__item-right-item-user-more-description">
+                                                Đăng xuất
+                                            </p>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="header__item-right-item-user-more-list-second">
+                                    <li class="header__item-right-item-user-more-item">
+                                        <a href="" class="header__item-right-item-user-more-link">
+                                            <i class="header__item-right-item-user-more-icon fal fa-moon"></i>
+                                            <p class="header__item-right-item-user-more-description">
+                                                Giao diện
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="header__item-right-item-user-more-item">
+                                        <a href="" class="header__item-right-item-user-more-link">
+                                            <i class="header__item-right-item-user-more-icon fal fa-language"></i>
+                                            <p class="header__item-right-item-user-more-description">
+                                                Ngôn ngữ : Tiếng việt
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="header__item-right-item-user-more-item">
+                                        <a href="" class="header__item-right-item-user-more-link">
+                                            <i class="header__item-right-item-user-more-icon fal fa-globe"></i>
+                                            <p class="header__item-right-item-user-more-description">
+                                                Địa điểm : Việt Nam
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="header__item-right-item-user-more-item">
+                                        <a href="" class="header__item-right-item-user-more-link">
+                                            <i class="header__item-right-item-user-more-icon fal fa-moon"></i>
+                                            <p class="header__item-right-item-user-more-description">
+                                                Giao diện
+                                            </p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <div id="content">
+        <div class="content__left-submenu active">
+            <ul class="content__left-submenu-list">
+                <li class="content__left-submenu-item">
+                    <i class="content__left-submenu-icon far fa-home"></i>
+                    <p class="content__left-submenu-item-descrip">
+                        Trang chủ
+                    </p>
+                </li>
+                <li class="content__left-submenu-item">
+                    <i class="content__left-submenu-icon far fa-compass"></i>
+                    <p class="content__left-submenu-item-descrip">
+                        Khám phá
+                    </p>
+                </li>
+                <li class="content__left-submenu-item">
+                    <i class="content__left-submenu-icon fal fa-album-collection"></i>
+                    <p class="content__left-submenu-item-descrip">
+                        Kênh đăng ký
+                    </p>
+                </li>
+                <li class="content__left-submenu-item">
+                    <i class="content__left-submenu-icon far fa-book-open"></i>
+                    <p class="content__left-submenu-item-descrip">
+                        Thư viện
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="content__left-mainmenu ">
+            <ul class="content__left-mainmenu-list-headone">
+                <li class="content__left-mainmenu-item">
+                    <a href="" class="content__left-mainmenu-link">
+                        <i class="content__left-mainmenu-icon far fa-home"></i>
+                        <p class="content__left-mainmenu-item-descrip ">
+                            Trang chủ
+                        </p>
+                    </a>
+
+                </li>
+                <li class="content__left-mainmenu-item">
+                    <a href="" class="content__left-mainmenu-link">
+                        <i class="content__left-mainmenu-icon far fa-compass"></i>
+                        <p class="content__left-mainmenu-item-descrip">
+                            Khám phá
+                        </p>
+                    </a>
+
+                </li>
+                <li class="content__left-mainmenu-item">
+                    <a href="" class="content__left-mainmenu-link">
+                        <i class="content__left-mainmenu-icon fal fa-album-collection"></i>
+                        <p class="content__left-mainmenu-item-descrip">
+                            Kênh đăng ký
+                        </p>
+                    </a>
+
+                </li>
+
+            </ul>
+            <ul class="content__left-mainmenu-list-headtwo">
+                <li class="content__left-mainmenu-item">
+                    <a href="" class="content__left-mainmenu-link">
+                        <i class="content__left-mainmenu-icon far fa-book-open"></i>
+                        <p class="content__left-mainmenu-item-descrip">
+                            Thư viện
+                        </p>
+                    </a>
+                </li>
+                <li class="content__left-mainmenu-item">
+                    <a href="" class="content__left-mainmenu-link">
+                        <i class="content__left-mainmenu-icon fal fa-history"></i>
+                        <p class="content__left-mainmenu-item-descrip">
+                            Video đã xem
+                        </p>
+                    </a>
+                </li>
+                <li class="content__left-mainmenu-item">
+                    <a href="" class="content__left-mainmenu-link">
+                        <i class="content__left-mainmenu-icon fal fa-caret-square-right"></i>
+                        <p class="content__left-mainmenu-item-descrip">
+                            Video của bạn
+                        </p>
+                    </a>
+                </li>
+                <li class="content__left-mainmenu-item">
+                    <a href="" class="content__left-mainmenu-link">
+                        <i class="content__left-mainmenu-icon fal fa-clock"></i>
+                        <p class="content__left-mainmenu-item-descrip">
+                            Xem sau
+                        </p>
+                    </a>
+                </li>
+                <li class="content__left-mainmenu-item">
+                    <a href="" class="content__left-mainmenu-link">
+                        <i class="content__left-mainmenu-icon fal fa-thumbs-up"></i>
+                        <p class="content__left-mainmenu-item-descrip">
+                            Video đã thích
+                        </p>
+                    </a>
+                </li>
+                <li class="content__left-mainmenu-item">
+                    <a href="" class="content__left-mainmenu-link">
+                        <i class="content__left-mainmenu-icon fal fa-list-music"></i>
+                        <p class="content__left-mainmenu-item-descrip">
+                            Nhạc chill buồn
+                        </p>
+                    </a>
+                </li>
+                <li class="content__left-mainmenu-item">
+                    <a href="" class="content__left-mainmenu-link">
+                        <i class="content__left-mainmenu-icon fal fa-list-music"></i>
+                        <p class="content__left-mainmenu-item-descrip">
+                            Học lập trình
+                        </p>
+                    </a>
+                </li>
+                <li class="content__left-mainmenu-item">
+                    <a href="" class="content__left-mainmenu-link">
+                        <i class="content__left-mainmenu-icon fal fa-list-music"></i>
+                        <p class="content__left-mainmenu-item-descrip">
+                            Deep
+                        </p>
+                    </a>
+                </li>
+                <li class="content__left-mainmenu-item">
+                    <i class="content__left-mainmenu-icon fal fa-chevron-up"></i>
+                    <p class="content__left-mainmenu-item-descrip">
+                        Ẩn
+                    </p>
+                </li>
+                <!-- <li class="content__left-mainmenu-item">
+                        <i class="content__left-mainmenu-icon fal fa-chevron-down"></i>
+                        <p class="content__left-mainmenu-item-descrip">
+                            Thêm
+                        </p>
+                    </li> -->
+            </ul>
+            <ul class="content__left-mainmenu-list-subscribe">
+                <h4 class="content__left-mainmenu-list-heading">
+                    Kênh đăng ký
+                </h4>
+                <li class="content__left-mainmenu-item-sub">
+                    <a href="" class="content__left-mainmenu-link">
+                        <img src="https://yt3.ggpht.com/ytc/AKedOLQltvG00hE9MRbWza5SlwyqWxRO1hpCDHbM-Wqn=s88-c-k-c0x00ffffff-no-rj"
+                            alt="" class="content__left-mainmenu-item-avatar">
+                        <div class="content__left-mainmenu-item-name">
+                            1977 Vlog
+                        </div>
+                    </a>
+
+                </li>
+                <li class="content__left-mainmenu-item-sub">
+                    <a href="" class="content__left-mainmenu-link">
+                        <img src="https://yt3.ggpht.com/ytc/AKedOLQltvG00hE9MRbWza5SlwyqWxRO1hpCDHbM-Wqn=s88-c-k-c0x00ffffff-no-rj"
+                            alt="" class="content__left-mainmenu-item-avatar">
+                        <div class="content__left-mainmenu-item-name">
+                            1977 Vlog
+                        </div>
+                    </a>
+                </li>
+                <li class="content__left-mainmenu-item-sub">
+                    <a href="" class="content__left-mainmenu-link">
+                        <img src="https://yt3.ggpht.com/ytc/AKedOLQltvG00hE9MRbWza5SlwyqWxRO1hpCDHbM-Wqn=s88-c-k-c0x00ffffff-no-rj"
+                            alt="" class="content__left-mainmenu-item-avatar">
+                        <div class="content__left-mainmenu-item-name">
+                            1977 Vlog
+                        </div>
+                    </a>
+                </li>
+                <li class="content__left-mainmenu-item-sub">
+                    <a href="" class="content__left-mainmenu-link">
+                        <img src="https://yt3.ggpht.com/ytc/AKedOLQltvG00hE9MRbWza5SlwyqWxRO1hpCDHbM-Wqn=s88-c-k-c0x00ffffff-no-rj"
+                            alt="" class="content__left-mainmenu-item-avatar">
+                        <div class="content__left-mainmenu-item-name">
+                            1977 Vlog
+                        </div>
+                    </a>
+                </li>
+                <li class="content__left-mainmenu-item-sub">
+                    <a href="" class="content__left-mainmenu-link">
+                        <img src="https://yt3.ggpht.com/ytc/AKedOLQltvG00hE9MRbWza5SlwyqWxRO1hpCDHbM-Wqn=s88-c-k-c0x00ffffff-no-rj"
+                            alt="" class="content__left-mainmenu-item-avatar">
+                        <div class="content__left-mainmenu-item-name">
+                            1977 Vlog
+                        </div>
+                    </a>
+                </li>
+                <li class="content__left-mainmenu-item">
+                    <i class="content__left-mainmenu-icon fal fa-chevron-up"></i>
+                    <p class="content__left-mainmenu-item-descrip">
+                        Ẩn
+                    </p>
+                </li>
+                <!-- <li class="content__left-mainmenu-item">
+                        <i class="content__left-mainmenu-icon fal fa-chevron-down"></i>
+                        <p class="content__left-mainmenu-item-descrip">
+                            Thêm
+                        </p>
+                    </li> -->
+            </ul>
+            <ul class="content__left-mainmenu-list-service">
+                <h4 class="content__left-mainmenu-list-heading">
+                    Dịch vụ khác của Youtube
+                </h4>
+                <li class="content__left-mainmenu-item">
+                    <a href="" class="content__left-mainmenu-link">
+                        <i class="content__left-mainmenu-icon fal fa-gamepad-alt"></i>
+                        <p class="content__left-mainmenu-item-descrip">
+                            Trò chơi
+                        </p>
+                    </a>
+                </li>
+                <li class="content__left-mainmenu-item">
+                    <a href="" class="content__left-mainmenu-link">
+                        <i class="content__left-mainmenu-icon  fal fa-signal-stream"></i>
+                        <p class="content__left-mainmenu-item-descrip">
+                            Sự kiện trực tiếp
+                        </p>
+                    </a>
+                </li>
+                <li class="content__left-mainmenu-item">
+                    <a href="" class="content__left-mainmenu-link">
+                        <i class="content__left-mainmenu-icon fal fa-trophy"></i>
+                        <p class="content__left-mainmenu-item-descrip">
+                            Thể thao
+                        </p>
+                    </a>
+                </li>
+                <li class="content__left-mainmenu-item">
+                    <a href="" class="content__left-mainmenu-link">
+                        <i class="content__left-mainmenu-icon fal fa-gamepad-alt"></i>
+                        <p class="content__left-mainmenu-item-descrip">
+                            Trò chơi
+                        </p>
+                    </a>
+                </li>
+            </ul>
+            <ul class="content__left-mainmenu-list-setting">
+                <li class="content__left-mainmenu-item">
+                    <a href="" class="content__left-mainmenu-link">
+                        <i class="content__left-mainmenu-icon fal fa-cog"></i>
+
+                        <p class="content__left-mainmenu-item-descrip">
+                            Cài đặt
+                        </p>
+                    </a>
+                </li>
+                <li class="content__left-mainmenu-item">
+                    <a href="" class="content__left-mainmenu-link">
+                        <i class="content__left-mainmenu-icon fal fa-flag"></i>
+                        <p class="content__left-mainmenu-item-descrip">
+                            Lịch sử báo cáo
+                        </p>
+                    </a>
+                </li>
+                <li class="content__left-mainmenu-item">
+                    <a href="" class="content__left-mainmenu-link">
+                        <i class="content__left-mainmenu-icon fal fa-question-circle"></i>
+
+                        <p class="content__left-mainmenu-item-descrip">
+                            Trợ giúp
+                        </p>
+                    </a>
+                </li>
+                <li class="content__left-mainmenu-item">
+                    <a href="" class="content__left-mainmenu-link">
+                        <i class="content__left-mainmenu-icon fal fa-exclamation-circle"></i>
+
+                        <p class="content__left-mainmenu-item-descrip">
+                            Gửi phản hồi
+                        </p>
+                    </a>
+                </li>
+            </ul>
+            <div class="content__left-mainmenu-list-help">
+                <div class="content__left-mainmenu-list-help-box">
+                    <div class="content__left-mainmenu-list-help-box1">
+                        <a href="" class="content__left-mainmenu-list-help-link">Giới thiệu</a>
+                        <a href="" class="content__left-mainmenu-list-help-link">Báo chí</a>
+                        <a href="" class="content__left-mainmenu-list-help-link">Bản quyền</a>
+                        <a href="" class="content__left-mainmenu-list-help-link">Liên hệ với chúng tôi</a>
+                        <a href="" class="content__left-mainmenu-list-help-link">Người sáng tạo</a>
+                        <a href="" class="content__left-mainmenu-list-help-link">Quảng cáo</a>
+                        <a href="" class="content__left-mainmenu-list-help-link">Nhà phát triển</a>
+                    </div>
+                    <div class="content__left-mainmenu-list-help-box2">
+                        <a href="" class="content__left-mainmenu-list-help-link">Điều khoản</a>
+                        <a href="" class="content__left-mainmenu-list-help-link">Quyền riêng tư</a>
+                        <a href="" class="content__left-mainmenu-list-help-link">Chính sách và an toàn</a>
+                        <a href="" class="content__left-mainmenu-list-help-link">Cách Youtube hoạt động</a>
+                        <a href="" class="content__left-mainmenu-list-help-link">Thử các tính năng mới</a>
+                    </div>
+
+
+                </div>
+                <p class="content__left-mainmenu-list-help-article">© 2021 Tăng Thuận Phát</p>
+
+            </div>
+        </div>
+
+        <div class="content__right">
+            <div class="content__right-search">
+                <div class="content__right-search-filter">
+                    <div class="content__right-search-filter-heading">
+                        <div class="content__right-search-filter-heading-content">
+                            <i class="content__right-search-filter-heading-icon fal fa-filter"></i>
+                            <p class="content__right-search-filter-heading-text">
+                                Bộ lọc
+                            </p>
+
+                        </div>
+                        <div class="content__right-search-filter-content">
+                            <ul class="content__right-search-filter-list">
+                                <li class="content__right-search-filter-item">
+                                    Ngày tải lên
+                                </li>
+                                <li class="content__right-search-filter-item">
+                                    <a href="" class="content__right-search-filter-link">
+                                        Một giờ qua
+                                    </a>
+                                </li>
+                                <li class="content__right-search-filter-item">
+                                    <a href="" class="content__right-search-filter-link">
+                                        Hôm nay
+                                    </a>
+                                </li>
+                                <li class="content__right-search-filter-item">
+                                    <a href="" class="content__right-search-filter-link">
+                                        Tuần này
+                                    </a>
+                                </li>
+                                <li class="content__right-search-filter-item">
+                                    <a href="" class="content__right-search-filter-link">
+                                        Tháng này
+                                    </a>
+                                </li>
+                                <li class="content__right-search-filter-item">
+                                    <a href="" class="content__right-search-filter-link">
+                                        Năm nay
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="content__right-search-filter-list">
+                                <li class="content__right-search-filter-item">
+                                    Loại
+                                </li>
+                                <li class="content__right-search-filter-item">
+                                    <a href="" class="content__right-search-filter-link">
+                                        Video
+                                    </a>
+                                </li>
+                                <li class="content__right-search-filter-item">
+                                    <a href="" class="content__right-search-filter-link">
+                                        Kênh
+                                    </a>
+                                </li>
+                                <li class="content__right-search-filter-item">
+                                    <a href="" class="content__right-search-filter-link">
+                                        Danh sách phát
+                                    </a>
+                                </li>
+                                <li class="content__right-search-filter-item">
+                                    <a href="" class="content__right-search-filter-link">
+                                        Phim
+                                    </a>
+                                </li>
+
+                            </ul>
+                            <ul class="content__right-search-filter-list">
+                                <li class="content__right-search-filter-item">
+                                    Thời lượng
+                                </li>
+                                <li class="content__right-search-filter-item">
+                                    <a href="" class="content__right-search-filter-link">
+                                        Dưới 4 phút
+                                    </a>
+                                </li>
+                                <li class="content__right-search-filter-item">
+                                    <a href="" class="content__right-search-filter-link">
+                                        4 - 20 phút
+                                    </a>
+                                </li>
+                                <li class="content__right-search-filter-item">
+                                    <a href="" class="content__right-search-filter-link">
+                                        Trên 20 phút
+                                    </a>
+                                </li>
+
+                            </ul>
+                            <ul class="content__right-search-filter-list">
+                                <li class="content__right-search-filter-item">
+                                    Video nổi bật
+                                </li>
+                                <li class="content__right-search-filter-item">
+                                    <a href="" class="content__right-search-filter-link">
+                                        Trực tiếp
+                                    </a>
+                                </li>
+                                <li class="content__right-search-filter-item">
+                                    <a href="" class="content__right-search-filter-link">
+                                        4K
+                                    </a>
+                                </li>
+                                <li class="content__right-search-filter-item">
+                                    <a href="" class="content__right-search-filter-link">
+                                        HD
+                                    </a>
+                                </li>
+                                <li class="content__right-search-filter-item">
+                                    <a href="" class="content__right-search-filter-link">
+                                        Phụ đề
+                                    </a>
+                                </li>
+                                <li class="content__right-search-filter-item">
+                                    <a href="" class="content__right-search-filter-link">
+                                        VR180
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="content__right-search-filter-list">
+                                <li class="content__right-search-filter-item">
+                                    Sắp xếp theo
+                                </li>
+                                <li class="content__right-search-filter-item">
+                                    <a href="" class="content__right-search-filter-link active">
+                                        Mức độ liên quan
+                                    </a>
+                                </li>
+                                <li class="content__right-search-filter-item">
+                                    <a href="" class="content__right-search-filter-link">
+                                        Ngày tải lên
+                                    </a>
+                                </li>
+                                <li class="content__right-search-filter-item">
+                                    <a href="" class="content__right-search-filter-link">
+                                        Lượt xem
+                                    </a>
+                                </li>
+                                <li class="content__right-search-filter-item">
+                                    <a href="" class="content__right-search-filter-link">
+                                        Xếp hạng
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content__right-search-content">
+                        <ul class="content__right-search-content-list">
+                            <li class="content__right-search-content-item">
+                                <a href="" class="content__right-search-content-link">
+                                    <div class="content__right-search-content-link-img-icon">
+                                        <img src="https://i.ytimg.com/vi/F5tS5m86bOI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA3wdITtvRlI9_sicYdTKthjfmAbg"
+                                        alt="" class="content__right-search-content-item-img">
+                                        <span class="content__right-search-content-item-duration">
+                                           10:24
+                                        </span>
+                                        <i class="content__right-search-content-icon1 far fa-clock"></i>
+                                        <i class="content__right-search-content-icon2 fal fa-list"></i>
+                                    </div>
+                                   
+                                    <div class="content__right-search-content-item-text">
+                                        <p class="content__right-search-content-item-name">LẠ LÙNG / Vũ. (Original)</p>
+                                        <div class="content__right-search-content-item-view-time">
+                                            <p class="content__right-search-content-item-view">
+                                                94 Tr lượt xem
+                                            </p>
+                                            <span class="content__right-search-content-item-view-time-space">
+                                                •
+                                            </span>
+
+                                            <p class="content__right-search-content-item-time">
+                                                4 năm trước
+                                            </p>
+                                        </div>
+                                        <div class="content__right-search-content-item-avatar-channel">
+                                            <img src="https://yt3.ggpht.com/ytc/AKedOLQ-oPdSGem16fIDAPWBaZNbQGRbpIhpTCBP1XwLfQ=s88-c-k-c0x00ffffff-no-rj"
+                                                alt="" class="content__right-search-content-item-avatar">
+                                            <p class="content__right-search-content-item-channel">
+                                                Vũ Official
+                                            </p>
+                                        </div>
+
+                                        <p class="content__right-search-content-item-description">
+                                            Lúc viết bài này, tôi đã nghĩ là: "Có những khoảnh khắc như thế này trong
+                                            đời, định đứng dậy để làm một điều gì đó có nghĩa, nhưng lại e dè từ chối
+                                            bản thân
+                                        </p>
+                                        <span class="content__right-search-content-item-tag">
+                                            Âm nhạc
+                                        </span>
+                                        <i class="content__right-search-content-item-icon fal fa-ellipsis-v"></i>
+                                    </div>
+                                    
+                                </a>
+                                
+                            </li>
+                            <li class="content__right-search-content-item">
+                                <a href="" class="content__right-search-content-link">
+                                    <div class="content__right-search-content-link-img-icon">
+                                        <img src="https://i.ytimg.com/vi/U2sgcEd9Tjk/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDAHXpnyMxX9gDib9bBCwXh-SSc1Q"
+                                        alt="" class="content__right-search-content-item-img">
+                                        <span class="content__right-search-content-item-duration">
+                                           10:24
+                                        </span>
+                                        <i class="content__right-search-content-icon1 far fa-clock"></i>
+                                        <i class="content__right-search-content-icon2 fal fa-list"></i>
+                                    </div>
+                                   
+                                    <div class="content__right-search-content-item-text">
+                                        <p class="content__right-search-content-item-name">Lạ Lùng - Vũ [ LYRIC ]</p>
+                                        <div class="content__right-search-content-item-view-time">
+                                            <p class="content__right-search-content-item-view">
+                                                600 N lượt xem
+                                            </p>
+                                            <span class="content__right-search-content-item-view-time-space">
+                                                •
+                                            </span>
+
+                                            <p class="content__right-search-content-item-time">
+                                                4 năm trước
+                                            </p>
+                                        </div>
+                                        <div class="content__right-search-content-item-avatar-channel">
+                                            <img src="https://yt3.ggpht.com/ytc/AKedOLTeJUFonfQ7R3-Lo8VpOtl-wACXJeoznzAQAPIFsg=s88-c-k-c0x00ffffff-no-rj"
+                                                alt="" class="content__right-search-content-item-avatar">
+                                            <p class="content__right-search-content-item-channel">
+                                                Gia Huy Phạm
+                                            </p>
+                                        </div>
+
+                                        <p class="content__right-search-content-item-description">
+                                            LẠ LÙNG Vocal: Vũ MP3: https://soundcloud.com/toilavu/lalung Lúc viết bài này, tôi đã nghĩ là: "Có những khoảnh khắc như thế
+                                        </p>
+                                        <span class="content__right-search-content-item-tag">
+                                            Âm nhạc
+                                        </span>
+                                        <i class="content__right-search-content-item-icon fal fa-ellipsis-v"></i>
+                                    </div>
+                                    
+                                </a>
+                                
+                            </li>
+                            <li class="content__right-search-content-item">
+                                <a href="" class="content__right-search-content-link">
+                                    <div class="content__right-search-content-link-img-icon">
+                                        <img src="https://i.ytimg.com/vi/sbHa1gVCuEQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCtwEig2_8X7W5U5CUkp9an_P1H2Q"
+                                        alt="" class="content__right-search-content-item-img">
+                                        <span class="content__right-search-content-item-duration">
+                                           10:24
+                                        </span>
+                                        <i class="content__right-search-content-icon1 far fa-clock"></i>
+                                        <i class="content__right-search-content-icon2 fal fa-list"></i>
+                                    </div>
+                                   
+                                    <div class="content__right-search-content-item-text">
+                                        <p class="content__right-search-content-item-name">3107-3 | W/n x Nâu x Duongg x Titie (lofi ver by Whisky x Mr.Paa)</p>
+                                        <div class="content__right-search-content-item-view-time">
+                                            <p class="content__right-search-content-item-view">
+                                                268 N lượt xem
+                                            </p>
+                                            <span class="content__right-search-content-item-view-time-space">
+                                                •
+                                            </span>
+
+                                            <p class="content__right-search-content-item-time">
+                                                1 tuần trước
+                                            </p>
+                                        </div>
+                                        <div class="content__right-search-content-item-avatar-channel">
+                                            <img src="https://yt3.ggpht.com/ytc/AKedOLTgVKOL2XrRvhdlJbcqXtcGUAxOSbQ3eOcTF_KeHA=s88-c-k-c0x00ffffff-no-rj"
+                                                alt="" class="content__right-search-content-item-avatar">
+                                            <p class="content__right-search-content-item-channel">
+                                                Gum Entertainment
+                                            </p>
+                                        </div>
+
+                                        <p class="content__right-search-content-item-description">
+                                            31073 #Wn #Duongg #3107 #Win ------- ĐĂNG KÝ KÊNH Gum Entertainment: https://bit.ly/GumEntertainment About Gum 
+                                        </p>
+                                        <span class="content__right-search-content-item-tag">
+                                            Âm nhạc
+                                        </span>
+                                        <i class="content__right-search-content-item-icon fal fa-ellipsis-v"></i>
+                                    </div>
+                                    
+                                </a>
+                                
+                            </li>
+                            <li class="content__right-search-content-item">
+                                <a href="" class="content__right-search-content-link">
+                                    <div class="content__right-search-content-link-img-icon">
+                                        <img src="https://i.ytimg.com/vi/4RIqnHbgt64/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDF8xT-R-vI_fwXGlpmMjamFwJeAA"
+                                        alt="" class="content__right-search-content-item-img">
+                                        <span class="content__right-search-content-item-duration">
+                                           10:24
+                                        </span>
+                                        <i class="content__right-search-content-icon1 far fa-clock"></i>
+                                        <i class="content__right-search-content-icon2 fal fa-list"></i>
+                                    </div>
+                                   
+                                    <div class="content__right-search-content-item-text">
+                                        <p class="content__right-search-content-item-name">
+                                            EM KHÔNG HIỂU - Changg x Minh Huy | LYRICS VIDEO</p>
+                                        <div class="content__right-search-content-item-view-time">
+                                            <p class="content__right-search-content-item-view">
+                                                183 N lượt xem
+                                            </p>
+                                            <span class="content__right-search-content-item-view-time-space">
+                                                •
+                                            </span>
+
+                                            <p class="content__right-search-content-item-time">
+                                                1 tháng trước
+                                            </p>
+                                        </div>
+                                        <div class="content__right-search-content-item-avatar-channel">
+                                            <img src="https://yt3.ggpht.com/ytc/AKedOLTkYzJLHKxbOA1s2-0-VD-1qZ2DM-J7JaiZJyJW-g=s88-c-k-c0x00ffffff-no-rj"
+                                                alt="" class="content__right-search-content-item-avatar">
+                                            <p class="content__right-search-content-item-channel">
+                                                1 9 9 9 M
+                                            </p>
+                                        </div>
+
+                                        <p class="content__right-search-content-item-description">
+                                            Song: Em không hiểu Singer: Changg ft Minh Huy =============================== MV gốc: 
+                                        </p>
+                                        <span class="content__right-search-content-item-tag">
+                                            Âm nhạc
+                                        </span>
+                                        <i class="content__right-search-content-item-icon fal fa-ellipsis-v"></i>
+                                    </div>
+                                    
+                                </a>
+                                
+                            </li>
+                            <li class="content__right-search-content-item">
+                                <a href="" class="content__right-search-content-link">
+                                    <div class="content__right-search-content-link-img-icon">
+                                        <img src="https://i.ytimg.com/vi/u9FJxHEiaXE/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBF-xR2heX-XkmI6z5vNGJv4njVcg"
+                                        alt="" class="content__right-search-content-item-img">
+                                        <span class="content__right-search-content-item-duration">
+                                           10:24
+                                        </span>
+                                        <i class="content__right-search-content-icon1 far fa-clock"></i>
+                                        <i class="content__right-search-content-icon2 fal fa-list"></i>
+                                    </div>
+                                   
+                                    <div class="content__right-search-content-item-text">
+                                        <p class="content__right-search-content-item-name">
+                                            Có Hẹn Với Thanh Xuân - Monstar x Ryan「Lo - Fi Ver. by 1 9 6 7」/ Audio Lyrics</p>
+                                        <div class="content__right-search-content-item-view-time">
+                                            <p class="content__right-search-content-item-view">
+                                                855 N lượt xem
+                                            </p>
+                                            <span class="content__right-search-content-item-view-time-space">
+                                                •
+                                            </span>
+
+                                            <p class="content__right-search-content-item-time">
+                                                1 tháng trước
+                                            </p>
+                                        </div>
+                                        <div class="content__right-search-content-item-avatar-channel">
+                                            <img src="https://yt3.ggpht.com/ytc/AKedOLQIbSykWI9Zz6QQSiGXag1j8IrdQGnTVF2YrcrC=s88-c-k-c0x00ffffff-no-rj-mo"
+                                                alt="" class="content__right-search-content-item-avatar">
+                                            <p class="content__right-search-content-item-channel">
+                                                1 9 6 7
+                                            </p>
+                                        </div>
+
+                                        <p class="content__right-search-content-item-description">
+                                            "Thanh xuân không thể quay lại nhưng luôn còn lại trong chúng ta của hiện tại và tương lai.. mảnh ghép thanh xuân cùng khóc 
+                                        </p>
+                                        <span class="content__right-search-content-item-tag">
+                                            Âm nhạc
+                                        </span>
+                                        <i class="content__right-search-content-item-icon fal fa-ellipsis-v"></i>
+                                    </div>
+                                    
+                                </a>
+                                
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="/js/javascript.js"></script>
+    <script src="/js/search.js"></script>
+    
+</body>
+
+</html>
